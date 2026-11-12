@@ -8,10 +8,22 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 // ── MOBILE NAV ────────────────────────────────
 const hamburger = document.querySelector('.hamburger');
 const navLinks  = document.querySelector('.nav-links');
-hamburger?.addEventListener('click', () => navLinks.classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => navLinks.classList.remove('open'));
-});
+const setMenu = (open) => {
+  navLinks.classList.toggle('open', open);
+  hamburger.classList.toggle('open', open);
+  hamburger.setAttribute('aria-expanded', open);
+  hamburger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+};
+if (hamburger && navLinks) {
+  navLinks.id = 'navLinks';
+  hamburger.setAttribute('aria-controls', 'navLinks');
+  hamburger.setAttribute('aria-expanded', 'false');
+  hamburger.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  document.addEventListener('click', (e) => { if (!e.target.closest('nav')) setMenu(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+  matchMedia('(min-width: 861px)').addEventListener('change', () => setMenu(false));
+}
 
 // ── DARK / LIGHT TOGGLE ───────────────────────
 const themeToggle = document.getElementById('themeToggle');
