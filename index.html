@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbf6ec" />
+  <link rel="canonical" href="https://haise232.github.io/Portafolio/" />
+  <title>Joaquín Suárez Ramírez · Desarrollador Frontend y Multiplataforma</title>
+  <meta name="description" content="Portafolio de Joaquín Suárez Ramírez — Desarrollador Frontend y de Aplicaciones Multiplataforma. React, TypeScript, Kotlin, Node.js, Spring Boot. Disponible para nuevas oportunidades." />
+
+  <!-- Open Graph (LinkedIn / redes sociales) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Joaquín Suárez Ramírez · Desarrollador Frontend y Multiplataforma" />
+  <meta property="og:description" content="Desarrollador Frontend y Multiplataforma con React, TypeScript, Kotlin y Node.js. Prácticas en el Ayuntamiento de Agüimes y proyectos propios publicados. Disponible para nuevas oportunidades." />
+  <meta property="og:url"         content="https://haise232.github.io/Portafolio/" />
+  <meta property="og:image"       content="https://haise232.github.io/Portafolio/assets/img/proyectos/topcode.png" />
+  <meta property="og:locale"      content="es_ES" />
+  <meta property="og:image:alt"   content="Captura de TopCode, uno de los proyectos del portafolio" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="twitter:title"      content="Joaquín Suárez Ramírez · Desarrollador Frontend y Multiplataforma" />
+  <meta name="twitter:image"      content="https://haise232.github.io/Portafolio/assets/img/proyectos/topcode.png" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Joaquín Suárez Ramírez","jobTitle":"Desarrollador Frontend y de Aplicaciones Multiplataforma","url":"https://haise232.github.io/Portafolio/","email":"mailto:Joaquinjose1298@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Las Palmas de Gran Canaria","addressCountry":"ES"},"alumniOf":"CIFP Villa de Agüimes","knowsAbout":["React","TypeScript","Kotlin","Node.js","Spring Boot","PostgreSQL","Supabase"],"sameAs":["https://github.com/Haise232","https://www.linkedin.com/in/joaqu%C3%ADn-su%C3%A1rez-ram%C3%ADrez-145435356/"]}
+  </script>
+
+  <!-- Favicon: monograma -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230e7490'/><text x='50' y='66' font-size='46' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'>JS</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="seaBack" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sea-far)"/><stop offset="1" style="stop-color:var(--sea-mid)"/></linearGradient>
+<linearGradient id="seaFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sea-mid)"/><stop offset=".55" style="stop-color:var(--sea-near)"/><stop offset="1" style="stop-color:var(--sea-shore)"/></linearGradient>
+<linearGradient id="seaShore" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sea-shore);stop-opacity:0"/><stop offset=".4" style="stop-color:var(--sea-shore)"/><stop offset="1" style="stop-color:var(--sea-shallow);stop-opacity:.75"/></linearGradient>
+<filter id="foamBlur" x="-5%" y="-100%" width="110%" height="300%"><feGaussianBlur stdDeviation="3"/></filter>
+<symbol id="sh-scallop" viewBox="0 0 40 40"><path style="fill:var(--shell-a)" d="M20 37 14 31H26Z"/><path style="fill:var(--shell-a);stroke:var(--shell-b);stroke-width:1.2" d="M20 33 5 19C2 10 10 3 20 3S38 10 35 19Z"/><path style="fill:none;stroke:var(--shell-b);stroke-width:1.1;stroke-linecap:round" d="M20 33V6M20 33 11 7M20 33 29 7M20 33 7 13M20 33 33 13"/></symbol>
+<symbol id="sh-spiral" viewBox="0 0 40 40"><path style="fill:var(--shell-c);stroke:var(--shell-b);stroke-width:1.2" d="M6 24C4 12 16 4 27 8c8 3 10 13 5 20-5 7-17 8-22 1Z"/><path style="fill:none;stroke:var(--shell-b);stroke-width:1.3;stroke-linecap:round" d="M28 15C25 11 18 12 16 17c-2 5 2 9 7 8 4-1 5-5 3-7-2-2-5-1-5 1"/></symbol>
+<symbol id="sh-star" viewBox="0 0 40 40"><path style="fill:var(--shell-d);stroke:var(--shell-b);stroke-width:1;stroke-linejoin:round" d="M20 3l4.6 11.6L37 15.4l-9.6 7.8L30.6 36 20 29l-10.6 7 3.2-12.8L3 15.4l12.4-.8Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20 15 15 0 010-20"/></symbol>
+<symbol id="i-gh" viewBox="0 0 16 16"><path fill="currentColor" stroke="none" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+<symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><path d="M17.32 5H6.68a4 4 0 00-3.98 3.59L2 15a3 3 0 005.12 2.12L9 16h6l1.88 1.12A3 3 0 0022 15l-.7-6.41A4 4 0 0017.32 5z"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 010-4h12v4M4 6v12a2 2 0 002 2h14v-4"/><path d="M18 12a2 2 0 000 4h4v-4z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-film" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.2"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ── NAV ───────────────────────────────────── -->
+<nav aria-label="Principal">
+  <a href="#hero" class="nav-logo">&lt;JSR /&gt;</a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#experience">Experiencia</a></li>
+    <li><a href="#skills">Tecnologías</a></li>
+    <li><a href="#learning">2º DAM</a></li>
+    <li><a href="#education">Formación</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+    <button class="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────── -->
+<main id="main">
+<section id="hero">
+  <div class="waves" aria-hidden="true">
+    <div class="tide">
+      <svg class="wave w1" viewBox="0 0 2880 120" preserveAspectRatio="none"><path style="fill:url(#seaBack)" d="M0 60C240 0 480 0 720 60S1200 120 1440 60S1920 0 2160 60S2640 120 2880 60V120H0Z"/></svg>
+      <svg class="wave w2" viewBox="0 0 2880 120" preserveAspectRatio="none"><path style="fill:url(#seaFront)" d="M0 44C240 8 480 8 720 44S1200 80 1440 44S1920 8 2160 44S2640 80 2880 44V120H0Z"/><path class="crest" d="M0 44C240 8 480 8 720 44S1200 80 1440 44S1920 8 2160 44S2640 80 2880 44"/></svg>
+      <div class="glints"></div>
+      <svg class="shoreline" viewBox="0 0 2880 44" preserveAspectRatio="none"><path class="water" style="fill:url(#seaShore)" d="M2880 24c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0V0H2880Z"/><path class="foam-soft" d="M2880 24c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0"/><path class="foam-line" d="M2880 24c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0c-90 22-270-22-360 0"/></svg>
+    </div>
+    <div class="sand">
+      <svg class="shell sh1" style="left:8%;bottom:34px;width:34px;transform:rotate(-14deg)" viewBox="0 0 40 40"><use href="#sh-scallop"/></svg>
+      <svg class="shell sh2" style="left:27%;bottom:14px;width:26px;transform:rotate(20deg)" viewBox="0 0 40 40"><use href="#sh-spiral"/></svg>
+      <svg class="shell sh3" style="left:52%;bottom:30px;width:30px;transform:rotate(12deg)" viewBox="0 0 40 40"><use href="#sh-star"/></svg>
+      <svg class="shell sh4" style="left:71%;bottom:12px;width:24px;transform:rotate(18deg)" viewBox="0 0 40 40"><use href="#sh-scallop"/></svg>
+      <svg class="shell sh5" style="left:90%;bottom:32px;width:28px;transform:rotate(-24deg)" viewBox="0 0 40 40"><use href="#sh-spiral"/></svg>
+    </div>
+  </div>
+  <div class="hero-inner hero-split">
+
+    <div class="hero-copy">
+      <div class="hero-greeting" data-type>Hola, soy</div>
+      <h1 class="hero-name" data-type>Joaquín Suárez Ramírez</h1>
+      <p class="hero-role">
+        <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc" data-type>
+        Desarrollador frontend y multiplataforma. Construyo interfaces limpias, accesibles y bien estructuradas.
+        Actualmente en 2º de DAM, con prácticas en el Ayuntamiento de Agüimes y proyectos propios publicados.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="https://github.com/Haise232" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/joaqu%C3%ADn-su%C3%A1rez-ram%C3%ADrez-145435356/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+        <a href="mailto:Joaquinjose1298@gmail.com" class="btn btn-secondary">Contactar</a>
+        <a href="assets/cv/CV_Joaquin_Suarez.pdf" download class="btn btn-secondary">Descargar CV</a>
+      </div>
+
+      <div class="hero-badges">
+        <span class="badge">React · TypeScript</span>
+        <span class="badge">Kotlin · Android</span>
+        <span class="badge">Node.js · Spring Boot</span>
+        <span class="badge">PostgreSQL · Supabase</span>
+        <span class="badge">HTML5 · CSS3 · JS</span>
+        <span class="badge">Git / GitHub</span>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="profile-card">
+        <div class="profile-monogram" aria-hidden="true">JS</div>
+        <dl class="profile-facts">
+          <div><dt>Ubicación</dt><dd>Las Palmas, España</dd></div>
+          <div><dt>Formación</dt><dd>2º de DAM</dd></div>
+          <div><dt>Perfil</dt><dd>Frontend · Full-stack</dd></div>
+          <div><dt>Idiomas</dt><dd>Español · Inglés</dd></div>
+        </dl>
+      </div>
+      <span class="available-badge"><span class="available-dot"></span>Disponible</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── STATS ──────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="6">0</span>
+      <span class="stat-label">Proyectos publicados</span>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="30">0</span>+
+      <span class="stat-label">Tecnologías</span>
+    </div>
+    <div class="stat-sep"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="2">0</span>
+      <span class="stat-label">Ciclos formativos</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ── SOBRE MÍ ───────────────────────────────── -->
+<section id="about">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Sobre mí</h2>
+    <div class="about-grid fade-in">
+      <div class="about-text">
+        <p>
+          Desarrollador de <strong>Las Palmas de Gran Canaria</strong>, en <strong>2º del Grado Superior en DAM</strong>.
+          Me enfoco en crear interfaces limpias y funcionales — código que se entiende tanto por el usuario como por quien lo mantiene.
+        </p>
+        <p>
+          Realicé prácticas en el <strong>Ayuntamiento de Agüimes</strong> en dos ocasiones: en 2025, durante 1º de DAM, desarrollé la web de gestión y préstamo de expedientes del archivo municipal, y en 2024, durante el Grado Medio en SMR, la intranet municipal con HTML, CSS, JavaScript y PHP, además de dar soporte IT. También he construido proyectos propios
+          desde cero y los he publicado: web, app móvil, API y escritorio. Tengo visión full-stack,
+          lo que me permite colaborar con cualquier parte del equipo.
+        </p>
+        <p>
+          Busco un equipo donde aportar desde el primer día y seguir creciendo.
+        </p>
+      </div>
+
+      <ul class="contact-list">
+        <li><div class="contact-icon"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></div>Las Palmas de Gran Canaria</li>
+        <li><div class="contact-icon"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></div><a href="mailto:Joaquinjose1298@gmail.com">Joaquinjose1298@gmail.com</a></li>
+        <li><div class="contact-icon"><svg class="ico" aria-hidden="true"><use href="#i-in"/></svg></div><a href="https://www.linkedin.com/in/joaqu%C3%ADn-su%C3%A1rez-ram%C3%ADrez-145435356/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><div class="contact-icon"><svg class="ico" aria-hidden="true"><use href="#i-gh"/></svg></div><a href="https://github.com/Haise232" target="_blank" rel="noopener">github.com/Haise232</a></li>
+        <li><div class="contact-icon"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></div>Español nativo · Inglés intermedio</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROYECTOS ──────────────────────────────── -->
+<section id="projects">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Proyectos</h2>
+    <div class="projects-grid fade-in">
+
+      <div class="project-card feat" data-tilt>
+        <figure class="shot" data-photo><img src="assets/img/proyectos/gcgames.webp" alt="Portada de GcGames, plataforma de juegos multijugador con temporada y misiones" width="1440" height="900" loading="lazy"></figure>
+        <div class="project-card-header">
+          <span class="project-icon"><svg class="ico" aria-hidden="true"><use href="#i-gamepad"/></svg></span>
+          <div class="project-links"><a href="https://github.com/Haise232/GcGames" target="_blank" rel="noopener" class="project-link">Código →</a><a href="https://play.gcgames.workers.dev" target="_blank" rel="noopener" class="project-link project-link-live">Demo ↗</a></div>
+        </div>
+        <div class="project-name" data-type>GcGames</div>
+        <p class="project-desc" data-type>Plataforma de juegos multijugador en tiempo real: mesas en vivo, rondas simultáneas, juegos en solitario, colección de cartas y una economía semanal. Moneda ficticia y arquitectura serverless sobre Cloudflare y Supabase.</p>
+        <div class="project-stack"><span class="stack-tag">React</span><span class="stack-tag">Vite</span><span class="stack-tag">Cloudflare Workers</span><span class="stack-tag">Supabase</span><span class="stack-tag">PWA</span></div>
+      </div>
+
+      <div class="project-card feat" data-tilt>
+        <figure class="shot" data-photo><img src="assets/img/proyectos/topcode.png" alt="Pantalla de inicio de TopCode, intranet académica" width="1806" height="936" loading="lazy"></figure>
+        <div class="project-card-header">
+          <span class="project-icon"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg></span>
+          <div class="project-links"><a href="https://github.com/Haise232/TopCode" target="_blank" rel="noopener" class="project-link">Código →</a><a href="https://topcode-2na.pages.dev" target="_blank" rel="noopener" class="project-link project-link-live">Demo ↗</a></div>
+        </div>
+        <div class="project-name" data-type>TopCode</div>
+        <p class="project-desc" data-type>Intranet académica para estudiantes de DAM, DAW y ASIR: actividades, calendario, apuntes en Markdown, foro, recursos y chat en tiempo real. Web y app móvil.</p>
+        <div class="project-stack"><span class="stack-tag">React</span><span class="stack-tag">TypeScript</span><span class="stack-tag">Expo</span><span class="stack-tag">Tailwind</span><span class="stack-tag">Supabase</span></div>
+      </div>
+
+
+
+    </div>
+    <p class="projects-more fade-in"><a href="https://github.com/Haise232?tab=repositories" target="_blank" rel="noopener">Ver todos los repositorios en GitHub →</a></p>
+  </div>
+</section>
+
+<div class="beach-divider" aria-hidden="true"><svg class="shell" viewBox="0 0 40 40"><use href="#sh-scallop"/></svg><svg class="shell" viewBox="0 0 40 40"><use href="#sh-spiral"/></svg><svg class="shell" viewBox="0 0 40 40"><use href="#sh-star"/></svg></div>
+
+<!-- ── EXPERIENCIA ────────────────────────────── -->
+<section id="experience">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Experiencia</h2>
+    <div class="timeline fade-in">
+
+      <div class="timeline-item">
+        <div class="timeline-line">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-title" data-type>Desarrollo web – Prácticas</span>
+            <span class="timeline-date">2025</span>
+          </div>
+          <div class="timeline-company">Ayuntamiento de Agüimes · Prácticas de 1º de DAM</div>
+          <ul>
+            <li>Desarrollo de la web de gestión y préstamo de expedientes del archivo municipal.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-line">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <span class="timeline-title" data-type>Desarrollo web y soporte IT – Prácticas</span>
+            <span class="timeline-date">2024</span>
+          </div>
+          <div class="timeline-company">Ayuntamiento de Agüimes · Prácticas del Grado Medio en SMR</div>
+          <ul>
+            <li>Desarrollo de la intranet municipal con HTML, CSS, JavaScript y PHP.</li>
+            <li>Reparación, montaje y mantenimiento de equipos informáticos.</li>
+            <li>Soporte IT: incidencias técnicas, instalación de software, redes y atención a usuarios.</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TECNOLOGÍAS ────────────────────────────── -->
+<section id="skills">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Tecnologías</h2>
+
+    <!-- Grupos de tecnologías -->
+    <div class="tech-group fade-in">
+      <p class="tech-group-label">Frontend</p>
+      <div class="tech-icon-grid">
+        <div class="tech-icon-item">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-typescript-plain colored"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-react-original colored"></i>
+          <span>React</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/vite.svg);--c:#646CFF"></i>
+          <span>Vite</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-tailwindcss-plain colored"></i>
+          <span>Tailwind</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-bootstrap-plain colored"></i>
+          <span>Bootstrap</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-group fade-in">
+      <p class="tech-group-label">Móvil</p>
+      <div class="tech-icon-grid">
+        <div class="tech-icon-item">
+          <i class="devicon-kotlin-plain colored"></i>
+          <span>Kotlin</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/jetpackcompose.svg);--c:#4285F4"></i>
+          <span>Jetpack Compose</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-react-original colored"></i>
+          <span>React Native</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/expo.svg);--c:var(--text)"></i>
+          <span>Expo</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-android-plain colored"></i>
+          <span>Android</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-group fade-in">
+      <p class="tech-group-label">Backend</p>
+      <div class="tech-icon-grid">
+        <div class="tech-icon-item">
+          <i class="devicon-nodejs-plain colored"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-express-original"></i>
+          <span>Express</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-java-plain colored"></i>
+          <span>Java</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-spring-plain colored"></i>
+          <span>Spring Boot</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-group fade-in">
+      <p class="tech-group-label">Escritorio</p>
+      <div class="tech-icon-grid">
+        <div class="tech-icon-item">
+          <i class="devicon-csharp-plain colored"></i>
+          <span>C#</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-dot-net-plain colored"></i>
+          <span>.NET</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-opencv-plain colored"></i>
+          <span>OpenCV</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-group fade-in">
+      <p class="tech-group-label">Base de datos &amp; Cloud</p>
+      <div class="tech-icon-grid">
+        <div class="tech-icon-item">
+          <i class="devicon-mysql-plain colored"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-postgresql-plain colored"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/supabase.svg);--c:#3ECF8E"></i>
+          <span>Supabase</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-docker-plain colored"></i>
+          <span>Docker</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/cloudflare.svg);--c:#F38020"></i>
+          <span>Cloudflare</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/vercel.svg);--c:var(--text)"></i>
+          <span>Vercel</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="si" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@9.21.0/icons/render.svg);--c:#46E3B7"></i>
+          <span>Render</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech-group fade-in">
+      <p class="tech-group-label">Herramientas</p>
+      <div class="tech-icon-grid">
+        <div class="tech-icon-item">
+          <i class="devicon-git-plain colored"></i>
+          <span>Git</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-github-original"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-linux-plain"></i>
+          <span>Linux</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-vscode-plain colored"></i>
+          <span>VS Code</span>
+        </div>
+        <div class="tech-icon-item">
+          <i class="devicon-androidstudio-plain colored"></i>
+          <span>Android Studio</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tags secundarios para redes y extra -->
+    <div class="tech-extra fade-in">
+      <span class="tech-extra-label">También:</span>
+      <span class="skill-tag">Spring Security</span>
+      <span class="skill-tag">JWT</span>
+      <span class="skill-tag">AJAX</span>
+      <span class="skill-tag">REST API</span>
+      <span class="skill-tag">DNS · DHCP</span>
+      <span class="skill-tag">Windows Server</span>
+      <span class="skill-tag">Active Directory</span>
+      <span class="skill-tag">VirtualBox · VMware</span>
+      <span class="skill-tag">IPv4 Subnetting</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── 2º DE DAM ──────────────────────────────── -->
+<section id="learning">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Lo nuevo en 2º de DAM</h2>
+    <p class="section-lead fade-in" data-type>Este curso he pasado de la web clásica a construir productos completos en varias plataformas. Esto es lo que he aprendido y dónde lo he aplicado.</p>
+    <div class="learn-grid fade-in">
+
+      <article class="learn-card">
+        <span class="learn-icon"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <h3 data-type>Desarrollo móvil</h3>
+        <p data-type>Android nativo con <strong>Kotlin y Jetpack Compose</strong> y apps multiplataforma con <strong>React Native + Expo</strong>: un mismo código para Android, iOS y web.</p>
+        <span class="learn-proj">DAMFlix · MiBalance · TopCode</span>
+      </article>
+
+      <article class="learn-card">
+        <span class="learn-icon"><svg class="ico" aria-hidden="true"><use href="#i-code"/></svg></span>
+        <h3 data-type>React y TypeScript</h3>
+        <p data-type>Componentes, estado, rutas y tipado estricto con <strong>Vite</strong> y <strong>Tailwind</strong>. Del JavaScript de la intranet a aplicaciones mantenibles.</p>
+        <span class="learn-proj">TopCode · GcGames · Calculadora-React</span>
+      </article>
+
+      <article class="learn-card">
+        <span class="learn-icon"><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg></span>
+        <h3 data-type>Backend como servicio y cloud</h3>
+        <p data-type><strong>Supabase</strong> (autenticación y PostgreSQL), <strong>Cloudflare Workers/Pages</strong> y Vercel para desplegar sin gestionar servidores propios.</p>
+        <span class="learn-proj">GcGames · TopCode · MiBalance</span>
+      </article>
+
+      <article class="learn-card">
+        <span class="learn-icon"><svg class="ico" aria-hidden="true"><use href="#i-server"/></svg></span>
+        <h3 data-type>APIs con Spring Boot</h3>
+        <p data-type>POO y patrón MVC en Java, y una API REST con <strong>Spring Security (API Key)</strong>, <strong>PostgreSQL</strong>, <strong>Docker</strong> multi-stage y despliegue en Render.</p>
+        <span class="learn-proj">Rally Canarias · Sistema de Biblioteca MVC</span>
+      </article>
+
+      <article class="learn-card">
+        <span class="learn-icon"><svg class="ico" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+        <h3 data-type>Escritorio y visión por computador</h3>
+        <p data-type><strong>C# y Windows Forms</strong> con detección de cara (OpenCvSharp), seguimiento de manos (ONNX Runtime) y sonido (NAudio).</p>
+        <span class="learn-proj">FaceSage</span>
+      </article>
+
+      <article class="learn-card">
+        <span class="learn-icon"><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg></span>
+        <h3 data-type>Tiempo real y PWA</h3>
+        <p data-type>Mesas en vivo, rondas simultáneas y chat en tiempo real; aplicaciones instalables que funcionan como una app nativa.</p>
+        <span class="learn-proj">GcGames · TopCode</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="beach-divider" aria-hidden="true"><svg class="shell" viewBox="0 0 40 40"><use href="#sh-scallop"/></svg><svg class="shell" viewBox="0 0 40 40"><use href="#sh-spiral"/></svg><svg class="shell" viewBox="0 0 40 40"><use href="#sh-star"/></svg></div>
+
+<!-- ── FORMACIÓN ──────────────────────────────── -->
+<section id="education">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Formación</h2>
+    <div class="education-grid fade-in">
+
+      <div class="edu-card">
+        <div class="edu-year">2025 – En curso</div>
+        <div class="edu-title">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</div>
+        <div class="edu-center">CIFP Villa de Agüimes</div>
+        <span class="edu-badge">En curso</span>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-year">2023 – 2025</div>
+        <div class="edu-title">Técnico en Sistemas Microinformáticos y Redes</div>
+        <div class="edu-center">CIFP Villa de Agüimes</div>
+        <span class="edu-badge" style="background:rgba(94,234,212,.15);border-color:rgba(94,234,212,.4);color:var(--accent)">Completado</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACTO ───────────────────────────────── -->
+<section id="contact">
+  <div class="section-inner">
+    <h2 class="section-title" data-type><span>#</span> Contacto</h2>
+    <div class="contact-simple fade-in">
+      <p class="contact-intro">¿Tienes una oportunidad o proyecto? Escríbeme y te respondo lo antes posible.</p>
+      <div class="contact-btns">
+        <a href="mailto:Joaquinjose1298@gmail.com" class="contact-btn"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Joaquinjose1298@gmail.com</a>
+        <a href="https://www.linkedin.com/in/joaqu%C3%ADn-su%C3%A1rez-ram%C3%ADrez-145435356/" target="_blank" rel="noopener" class="contact-btn"><svg class="ico" aria-hidden="true"><use href="#i-in"/></svg>LinkedIn</a>
+        <a href="https://github.com/Haise232" target="_blank" rel="noopener" class="contact-btn"><svg class="ico" aria-hidden="true"><use href="#i-gh"/></svg>github.com/Haise232</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ─────────────────────────────────── -->
+<footer>
+  <svg class="foot-dune" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 48V30C180 10 360 4 560 18S900 40 1100 22 1340 6 1440 14V48Z"/></svg>
+  <div class="foot-shells" aria-hidden="true"><svg class="shell" viewBox="0 0 40 40"><use href="#sh-star"/></svg><svg class="shell" viewBox="0 0 40 40"><use href="#sh-scallop"/></svg><svg class="shell" viewBox="0 0 40 40"><use href="#sh-spiral"/></svg></div>
+  <p class="foot-note">
+    Diseñado y desarrollado por <strong>Joaquín Suárez Ramírez</strong> ·
+    <a href="https://github.com/Haise232" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/joaqu%C3%ADn-su%C3%A1rez-ram%C3%ADrez-145435356/" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="mailto:Joaquinjose1298@gmail.com">Contacto</a>
+  </p>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+<script src="assets/js/crew.js" defer></script>
+</body>
+</html>

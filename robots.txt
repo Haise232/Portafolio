@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haise232.github.io/Portafolio/sitemap.xml
