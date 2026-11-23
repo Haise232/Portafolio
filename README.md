@@ -65,7 +65,7 @@ Mi portafolio profesional, hecho con **HTML, CSS y JavaScript sin build step ni 
 | Tecnologías | 32 tecnologías en 6 grupos: Frontend, Móvil, Backend, Escritorio, Datos y Cloud, Herramientas |
 | Experiencia | Prácticas en el Ayuntamiento de Agüimes y proyecto personal (API REST) |
 | 2º de DAM | Qué he aprendido este curso y dónde lo apliqué |
-| Proyectos | GcGames, TopCode, MiBalance, Rally Canarias, FaceSage, DAMFlix |
+| Proyectos | GcGames, TopCode, Aetherfall, MiBalance, Rally Canarias, FaceSage, DAMFlix |
 | Formación y contacto | Estudios y vías de contacto |
 
 ## Cómo funciona el efecto de montaje
